@@ -1,0 +1,87 @@
+.categories {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 16px;
+    justify-content: center;
+}
+
+.styles_category {
+    text-align: center;
+}
+
+.styles_category img {
+    width: 40%;
+    border-radius: 4px;
+    transition: filter 0.2s ease-in-out; /* Resimdeki renk geçişini sağlamak için transition ekledik */
+}
+
+.categories .styles_category a {
+    text-decoration: none;
+    display: block; /* Link elementini blok düzene çevirerek, tam alanın üzerine tıklanabilir olmasını sağlıyoruz */
+}
+
+.categories .styles_category span {
+    text-align: center;
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    color: #3e3e3e;
+    transition: color 0.2s ease 0s;
+    min-height: 32px;
+    display: block; /* Span elementini blok düzene çevirerek, tam alanın üzerine tıklanabilir olmasını sağlıyoruz */
+}
+
+.categories .styles_category:hover {
+    color: rgb(93, 62, 188);
+    background-color: #f3f0fe;
+}
+
+
+
+.categories .styles_category:hover span {
+    color: rgb(93, 62, 188);
+}
+.categories .styles_category {
+    text-align: center;
+    border: 2px solid transparent; /* İlk durumda border olmadığı için şeffaf bir border tanımlıyoruz */
+    transition: border 0.2s ease-in-out; /* Border üzerinde geçiş efekti ekliyoruz */
+}
+
+.categories .styles_category:hover {
+    border-radius: 7px; /* Hover durumunda border ekliyoruz */
+}
+
+.styles_style{
+    display: block;
+    font-size: 17px;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    line-height: 19px;
+    font-weight: 500;
+    color: #191919;
+}
+
+.styles_category img{
+    border-radius: 8px;
+    border: 1px solid rgba(25, 25, 25, 0.1);
+}
+
+@media screen and (max-width: 1020px) {
+.categories{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+}
+@media screen and (max-width: 600px) {
+.categories{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+}
+/* @media screen and (max-width: 450px) {
+.categories{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+} */

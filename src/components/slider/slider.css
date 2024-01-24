@@ -1,0 +1,236 @@
+.backgroundImage1,
+.backgroundImage2,
+.backgroundImage3,
+.backgroundImage4 {
+  background: linear-gradient(to right, #5d3ebc, transparent), url('../../media/getir-mainpage-1.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundImage2 {
+  background: linear-gradient(to right, #5d3ebc, transparent), url('../../media/getir-mainpage-2.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundImage3 {
+  background: linear-gradient(to right, #5d3ebc, transparent), url('../../media/getir-mainpage-3.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundImage4 {
+  background: linear-gradient(to right, #5d3ebc, transparent), url('../../media/getir-mainpage-4.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundStyle {
+  min-width: 100%;
+  display: flex;
+  min-height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+
+.style_Left_Col img{
+  width: 45%;
+}
+.style_Left_Col h1{
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.style_background{
+  flex-direction: column;
+  position: relative;
+  width: 400px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  z-index: 10;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.style_background h5{
+  color: #5d3ebc;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.style_Border{
+  display: flex;
+  margin-left: 1.3rem;
+}
+
+.style_Border .style_Border_left select{
+  padding-left: 14px;
+  padding-right: 14px;
+  border: 2px solid rgb(223, 222, 226);
+  border-radius: 4px;
+  height: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+  
+  background-color: rgb(255, 255, 255);
+  width: 109px;
+  height: 56px;
+  cursor: pointer;
+  margin-right: .5rem;
+}
+
+
+select:focus {
+  outline: 2px solid rgb(93, 62, 188);
+  border: 2px solid rgb(93, 62, 188);
+
+}
+
+.style_Border_right input{
+  flex-direction: row;
+  padding-left: 14px;
+  padding-right: 14px;
+  align-items: center;
+  position: relative;
+  border: 2px solid rgb(223, 222, 226);
+  border-radius: 4px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.2s ease 0s;
+  height: 50px;
+  margin-left: .5rem;
+  outline: none;
+  color: #9088a6;
+}
+
+.style_Border_right input:hover{
+  border-color: #5d3ebc !important;
+}
+
+.buttonDiv button{
+  width: 90%;
+  background: #ffd300;
+  border: 0px;
+  color: #5d3ebc;
+  transition: all 0.2s ease 0s;
+  height: 48px;
+  white-space: nowrap;
+  margin-top: 10px;
+  justify-content: center;
+    height: 100%;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 14px 16px;
+    outline: 0px;
+    border-width: 0px;
+    border-style: initial;
+    border-image: initial;
+    cursor: pointer;
+    user-select: none;
+    display: inline-flex;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(105, 116, 136, 0.15) 0px 2px 6px;
+
+  
+}
+.buttonDiv button:hover{
+background-color: #5d3ebc;
+color: #ffd300;
+}
+.buttonDiv{
+  justify-content: center !important;
+  display: flex;
+}
+
+.style_background h5{
+  color: #5d3ebc;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
+.backgroundStyle {
+  min-width: 100%;
+  display: flex;
+  min-height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.style_background {
+  flex-direction: column;
+  position: relative;
+  width: 400px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  z-index: 10;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media screen and (max-width: 760px) {
+  .backgroundStyle {
+    background-image: none;
+    width: 100%;
+    display: block;
+    min-height: 0;
+    height: 0%;
+  }
+
+  .style_Left_Col {
+    display: none;
+  }
+
+  .style_Right_Col {
+    width: 100%;
+  }
+
+  .style_background {
+    width: 100%;
+  }
+
+  .style_Border {
+    margin-left: 0;
+  }
+
+  .style_Border_left input {
+    margin-bottom: 10px;
+  }
+
+  .style_Border_left select {
+    margin-bottom: 10px;
+  }
+  .style_Border_right {
+    flex-grow: 1;
+  }
+  
+  .style_Border_right input {
+    width: 98.5%;
+    box-sizing: border-box;
+    height: 55.2px;
+  }
+
+  
+
+  .buttonDiv button {
+    width: 100%;
+  }
+}
+
+
