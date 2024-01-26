@@ -1,9 +1,9 @@
 import './navbar.css'
 import { Link } from 'react-router-dom'
 import React, { useState } from 'react';
-import { RiGlobalLine } from "react-icons/ri";
-import { BsPersonFill } from "react-icons/bs";
-import { BsFillPersonPlusFill } from "react-icons/bs";
+// import { RiGlobalLine } from "react-icons/ri";
+// import { BsPersonFill } from "react-icons/bs";
+// import { BsFillPersonPlusFill } from "react-icons/bs";
 import image1 from '../../media/indir.getir.svg'
 
 
@@ -54,17 +54,17 @@ const Navbar = () => {
                 <div className="style_login">
                     <div className="style_language">
                             
-                    <RiGlobalLine />
+                    {/* <RiGlobalLine /> */}
                         <button> Türkçe (TR) </button>
                         
                        
                     </div>
                     <div className="style_log_in">
-                    <BsPersonFill />
+                    {/* <BsPersonFill /> */}
                         <button>Giriş</button>
                     </div>
                     <div className="style_register">
-                        <BsFillPersonPlusFill />
+                        {/* <BsFillPersonPlusFill /> */}
 
                         <button>Kayıt ol</button>
                     </div>
