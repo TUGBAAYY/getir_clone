@@ -189,8 +189,7 @@ color: #ffd300;
     background-image: none;
     width: 100%;
     display: block;
-    min-height: 0;
-    height: 0%;
+    
   }
 
   .style_Left_Col {
