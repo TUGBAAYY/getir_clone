@@ -1,8 +1,6 @@
 import './navbar.css'
 import { Link } from 'react-router-dom'
 import React, { useState } from 'react';
-import { BsPersonFill } from "react-icons/bs";
-import { BsFillPersonPlusFill } from "react-icons/bs";
 import image1 from '../../media/indir.getir.svg'
 
 
@@ -58,11 +56,9 @@ const Navbar = () => {
                        
                     </div>
                     <div className="style_log_in">
-                    <BsPersonFill />
                         <button>Giriş</button>
                     </div>
                     <div className="style_register">
-                        <BsFillPersonPlusFill />
 
                         <button>Kayıt ol</button>
                     </div>
