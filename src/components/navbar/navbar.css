@@ -28,7 +28,7 @@
   .style_logo a{
     color: white;
     text-decoration: none;
-    padding: 5px 15px 16px 15px;
+    padding: 5px 25px 16px 25px;
     position: relative;
     bottom: -.5rem;
     font-weight: 600;
@@ -52,7 +52,7 @@
 
   .style_logo a:hover{
     background-color: rgb(93, 62, 188);
-     padding: 5px 15px 16px 15px;
+     padding: 5px 25px 16px 25px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin: 0.1rem;
@@ -73,6 +73,8 @@
   border: none;
   color: white;
 }
+
+
 
 .header_logo{
   position: relative;
@@ -98,7 +100,7 @@ width: 100%;
 
 
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 918px) {
   .style_login button{
     display: none;
   }
@@ -106,14 +108,8 @@ width: 100%;
     width: 95%;
   }
 }
-@media screen and (max-width: 620px) {
-  .style_login{
-    display: none;
-  }
- 
-  
-}
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width: 570px) {
  
   .style_logo a{
     width: auto;
@@ -124,9 +120,24 @@ width: 100%;
     padding: 5px 5px 20px 5px;
   }
 }
+@media screen and (min-width: 760px) {
+  .style_navbar {
+    position: fixed;
+    z-index: 1000; /* Örnek bir z-index değeri */
+  }
+  
+}
+
 
 @media screen and (max-width: 760px) {
   .header_logo {
+  display: block;
+  }
+  .style_login{
+    display: none !important;
+  }
+ 
+  .style_navbar{
     display: block;
   }
 

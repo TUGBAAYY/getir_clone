@@ -127,8 +127,8 @@ const Data =[
 
 const Categories = () => {
   return (
-    <div>
-        <div className="style_container">
+    <div className='style_boxshadow'>
+        <div className="style_container ">
                 <h6 className='styles_style'>Kategoriler</h6>
             <div className="categories">
                 {Data.map(({id,img,title,to}, index) =>(

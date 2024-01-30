@@ -1,0 +1,101 @@
+.style_container_download{
+    width: 90%;
+    margin: auto;
+}
+.download_bg{
+    background-image: url(../../media/doodle.png);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #5d3ebc;
+    border-radius: 8px;
+    z-index: 1;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    min-height: 312px;
+    background-image: url(https://cdn.getir.com/getirweb-images/common/illustration/doodle.png);
+}
+
+.download_left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    max-width: 70%;
+    margin-left: 48px;
+}
+.download_left h2{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 34px;
+    color: rgb(255, 255, 255);
+}
+
+.download_left span{
+    max-width: 360px;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 24px;
+    margin-top: 12px;
+}
+
+.style_getir_left_img ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.style_getir_left_img li {
+    margin-right: 10px; /* İstediğiniz boşluk miktarını ayarlayabilirsiniz */
+}
+
+
+.download_right img {
+  
+    /* object-fit özelliğini kaldır */
+    /* object-fit: contain; */
+    border-radius: 0px;
+    background: transparent;
+    animation: auto ease 0s 1 normal none running none;
+    position: relative;
+    left: 270px;
+    top: 10px;
+}
+
+
+@media screen and (max-width: 750px) {
+   .style_getir_left_img ul  {
+    display: block;
+   }
+   .download_right img{
+    display: none;
+   }
+   .download_bg{
+    background-image: none;
+    border-radius: 0px;
+   }
+   .download_bacground{
+    background-color: #5d3ebc;
+   }
+   /* .style_container_download {
+
+   } */
+
+}
+@media screen and (max-width: 1200px) {
+   .download_left{
+    width: 50%;
+   }
+   .download_right img{
+    position: relative;
+    right: 580px;
+}
+
+}
+

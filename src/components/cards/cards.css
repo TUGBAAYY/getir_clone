@@ -1,0 +1,46 @@
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Yeterli alan olmadığında alt satıra geçmesini sağlar */
+}
+
+.style_container_cards {
+    width: 85%;
+    margin: auto;
+}
+
+.styles_cards {
+    width: calc(33.33% - 14px); /* Kartların genişliğini hesaplamak için calc() kullanıyoruz */
+    margin-bottom: 20px; /* Kartlar arasındaki boşluğu belirliyoruz */
+    padding: 10px;
+    box-shadow: rgba(63, 0, 253, 0.08) 30px 16px 184px;
+
+    border-radius: 8px;
+    box-sizing: border-box; /* Padding ve border'ı genişlik hesaplamasına dahil eder */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Resim ve yazıları dikeyde ortala */
+    text-align: center; /* Yazıları yatayda ortala */
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.styles_cards span{
+color: #5e3dbc;
+}
+.styles_cards img {
+    width: 30%; /* Resmi kart genişliğine sığacak şekilde ayarla */
+    margin-bottom: 10px; /* Resim ile yazı arasına boşluk bırak */
+}
+
+@media screen and (max-width: 918px) {
+    .styles_cards {
+        width: calc(50% - 20px); /* Ekran daraldığında iki sıra haline getiriyoruz */
+    }
+}
+
+@media screen and (max-width: 708px) {
+    .styles_cards {
+        width: 100%; /* Ekran daha da daraldığında tek sıra haline getiriyoruz */
+    }
+}

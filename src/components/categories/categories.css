@@ -66,6 +66,10 @@
     border-radius: 8px;
     border: 1px solid rgba(25, 25, 25, 0.1);
 }
+.style_boxshadow {
+    box-shadow: 0px 8px 16px rgba(88, 63, 181, 0.08);
+}
+
 
 @media screen and (max-width: 1020px) {
 .categories{
